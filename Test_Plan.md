@@ -1,5 +1,5 @@
 # Omnia Knowledge Transfer Plan
-**Duration:** 3 weeks (1 hour daily)  
+**Duration:** 3 weeks (starting 22-Apr-2026)  
 **Target Audience:** Omnia Validation Engineer  
 **Goal:** Enable independent validation of Omnia workflows
 
@@ -7,83 +7,54 @@
 
 ## Week 1: Foundations & Core Setup
 
-| Day | Topic | Owner | Duration | Activities | Hands-on | Validation Focus |
-|-----|-------|--------|----------|------------|----------|------------------|
-| 1 | Server Basics Overview | - | 1 hr | - Server hardware components (CPU, memory, NICs, BMC)<br>- BMC/iDRAC basics<br>- PXE boot concepts | Identify BMC IPs in lab | Understand server inventory |
-| 2 | omnia.sh Script Deep Dive | Balaji | 1 hr | - Script structure and options<br>- Environment setup<br>- Logging and troubleshooting | Run `./omnia.sh --help`<br>Check logs | Script navigation |
-| 3 | prepare_oim - Theory | Prasanth | 1 hr | - OIM (Open Infrastructure Manager) role<br>- Credential management<br>- Network configuration prerequisites | Review prepare_oim.yml | Understand prerequisites |
-| 4 | prepare_oim - Hands-on | Prasanth | 1 hr | - Run prepare_oim playbook<br>- Verify OIM services<br>- Check credential encryption | Execute playbook<br>Validate services | OIM deployment validation |
-| 5 | local_repo - Theory | Rohit | 1 hr | - Local repository purpose<br>- Package management<br>- Pulp container role | Review local_repo.yml | Repository concepts |
-| 6 | local_repo - Hands-on | Rohit | 1 hr | - Run local_repo playbook<br>- Verify repo endpoints<br>- Test package access | Execute playbook<br>Browse repos | Repository validation |
-| 7 | build_image - Theory | Balaji | 1 hr | - Image building workflow<br>- OS image customization<br>- Integration with local_repo | Review build_image.yml | Image build concepts |
+| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
+|-----|------|-------|--------|----------|------------|------------------|
+| 1 | 22-Apr | Hardware Basics & Networking | - | 1 hr | - Server hardware components (CPU, memory, NICs, BMC)<br>- Network topology and structure<br>- BMC/iDRAC basics<br>- PXE boot concepts | Understand server inventory and network structure |
+| 2 | 23-Apr | Omnia Architecture Overview | Balaji | 1 hr | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram | System context and component understanding |
+| 3 | 24-Apr | OS Installation & omnia.sh | Prasanth | 1 hr | - OS installation on physical servers<br>- omnia.sh script execution<br>- Environment setup<br>- Initial configuration | OS deployment and script execution validation |
+| 4 | 25-Apr | prepare_oim | Prasanth | 1 hr | - OIM (Open Infrastructure Manager) deployment<br>- Credential management<br>- Service configuration<br>- Network setup | OIM deployment validation |
+| 5 | 26-Apr | local_repo | Rohit | 1 hr | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation |
 
 ---
 
-## Week 2: Image Building & Build Stream
+## Week 2: Building & Deployment
 
-| Day | Topic | Owner | Duration | Activities | Hands-on | Validation Focus |
-|-----|-------|--------|----------|------------|----------|------------------|
-| 8 | build_image - Hands-on | Balaji | 1 hr | - Run build_image playbook<br>- Verify image artifacts<br>- Check image registry | Execute playbook<br>List images | Image build validation |
-| 9 | build_stream - Theory | Balaji | 1 hr | - Build stream workflow<br>- Stream configuration<br>- Integration with core container | Read build_stream playbooks<br>Check core container | Build stream concepts |
-| 10 | build_stream - Hands-on | Balaji | 1 hr | - Configure build stream<br>- Execute stream build<br>- Verify stream output | Run build_stream<br>Check results | Build stream validation |
-| 11 | provision.yml Overview | Balaji | 1 hr | - Provisioning workflow<br>- Node configuration<br>- Integration points | Review provision.yml | Provisioning understanding |
-| 12 | Slurm Provisioning | Rohit | 1 hr | - Slurm architecture<br>- Compute/control node roles<br>- Service configuration | Plan Slurm deployment | Slurm validation prep |
-| 13 | Kubernetes Basics | Prasanth | 1 hr | - K8s components<br>- Master/worker roles<br>- Network requirements | Read K8s playbooks | K8s concepts |
-| 14 | Telemetry Overview | Prasanth | 1 hr | - Telemetry architecture<br>- Monitoring components<br>- Data collection | Review telemetry playbooks | Telemetry concepts |
+| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
+|-----|------|-------|--------|----------|------------|------------------|
+| 6 | 29-Apr | build_image | Balaji | 1 hr | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation |
+| 7 | 30-Apr | Discovery & Provisioning | Balaji | 1 hr | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation |
+| 8 | 1-May | K8s Cluster Deployment | Rohit | 1 hr | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation |
+| 9 | 2-May | Slurm Cluster Deployment | Rohit | 1 hr | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation |
+| 10 | 3-May | Telemetry Workflow | Prasanth | 1 hr | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation |
 
 ---
 
-## Week 3: Code Review & Validation
+## Week 3: Automation & Code Walkthrough
 
-| Day | Topic | Owner | Duration | Activities | Hands-on | Validation Focus |
-|-----|-------|--------|----------|------------|----------|------------------|
-| 15 | Code Review - omnia.sh | Balaji | 1 hr | - Script structure analysis<br>- Error handling<br>- Logging mechanisms | Read omnia.sh code | Script validation |
-| 16 | Code Review - prepare_oim | Prasanth | 1 hr | - Playbook structure<br>- Role dependencies<br>- Configuration validation | Read prepare_oim playbooks | OIM validation |
-| 17 | Code Review - local_repo | Rohit | 1 hr | - Repository management<br>- Package handling<br>- Service configuration | Read local_repo playbooks | Repo validation |
-| 18 | Code Review - build_image | Balaji | 1 hr | - Image build process<br>- Template handling<br>- Registry integration | Read build_image playbooks | Build validation |
-| 19 | Code Review - provision | Balaji | 1 hr | - Node provisioning<br>- Service setup<br>- Configuration management | Read provision playbooks | Provision validation |
-| 20 | Code Review - K8s & Telemetry | Prasanth | 1 hr | - K8s deployment playbooks<br>- Telemetry collection<br>- Service integration | Read K8s/telemetry code | Service validation |
-| 21 | Validation Best Practices | All | 1 hr | - Test case design for Omnia<br>- Automation approaches<br>- Reporting standards | Review validation strategy | Validation methodology |
-
----
-
-## Daily Structure Template
-
-### First 15 minutes: Review
-- Previous day concepts
-- Questions and clarifications
-- Progress check
-
-### Next 30 minutes: Theory/Demo
-- Concept explanation
-- Live demonstration
-- Code/architecture review
-
-### Final 15 minutes: Hands-on Practice
-- Guided exercises
-- Independent practice
-- Next day preparation
+| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
+|-----|------|-------|--------|----------|------------|------------------|
+| 11 | 6-May | Automation Code Walkthrough | Balaji | 1 hr | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
 
 ---
 
 ## Owner Responsibilities
 
-### Balaji (omnia.sh, build_image, build_stream, provision)
-- Core script functionality
+### Balaji (Omnia Architecture, build_image, Discovery/Provisioning, Automation)
+- Omnia architecture overview
 - Image building workflows
-- Build stream configuration
-- Node provisioning
+- Discovery and provisioning
+- Automation code walkthrough
 
-### Prasanth (prepare_oim, K8s, telemetry)
+### Prasanth (OS Installation/omnia.sh, prepare_oim, Telemetry)
+- OS installation and omnia.sh execution
 - OIM deployment and configuration
-- Kubernetes components
 - Telemetry and monitoring
 - Service orchestration
 
-### Rohit (local_repo, Slurm)
+### Rohit (local_repo, K8s, Slurm)
 - Repository management
-- Package distribution
-- Slurm workload manager
+- Kubernetes cluster deployment
+- Slurm cluster deployment
 - Compute node validation
 
 ---
@@ -93,7 +64,7 @@
 ### Environment Requirements
 - Access to Omnia development environment
 - Test servers for validation
-- omnia_core container access
+- Physical servers for OS installation
 - Basic Linux command line knowledge
 
 ### Tools Needed
@@ -104,84 +75,113 @@
 
 ### Pre-KT Setup Checklist
 - [ ] omnia.sh script available
-- [ ] Test environment ready
+- [ ] Physical servers ready
 - [ ] Network connectivity verified
-- [ ] Documentation access
+- [ ] Test environment prepared
 
 ---
 
 ## Success Metrics
 
 ### Week 1 Goals
-- Understand Omnia architecture
-- Successfully run prepare_oim
-- Verify local_repo deployment
-- Navigate omnia_core container
+- Understand hardware and networking basics
+- Grasp Omnia architecture
+- Complete OS installation and omnia.sh execution
+- Deploy OIM and local_repo
 
 ### Week 2 Goals
 - Build custom images
-- Execute build_stream
-- Understand provisioning workflow
-- Grasp K8s and telemetry basics
+- Execute discovery and provisioning
+- Deploy K8s and Slurm clusters
+- Configure telemetry workflow
 
 ### Week 3 Goals
-- Read and understand core playbooks
-- Identify validation points
-- Document validation strategies
+- Understand automation framework
+- Review code structure
 - Prepare for independent validation
 
 ---
 
-## Code Review Focus Areas
+## Detailed Activity Breakdown
 
-### omnia.sh (Balaji)
-- Script entry points
-- Environment validation
-- Error handling
-- Logging mechanisms
+### Day 1 (22-Apr): Hardware Basics & Networking
+- Review server specifications
+- Understand network topology
+- Learn BMC/iDRAC management
+- Study PXE boot process
+- **Self-study materials provided**
 
-### prepare_oim (Prasanth)
-- OIM service deployment
-- Credential management
-- Network configuration
+### Day 2 (23-Apr): Omnia Architecture
+- Component interaction diagram
 - Service dependencies
+- Data flow understanding
+- Container roles
+- **Balaji will guide through architecture**
 
-### local_repo (Rohit)
-- Repository setup
+### Day 3 (24-Apr): OS Installation & omnia.sh
+- Physical server OS setup
+- omnia.sh script options
+- Environment validation
+- Initial configuration checks
+
+### Day 4 (25-Apr): prepare_oim
+- OIM service deployment
+- Credential encryption
+- Network configuration
+- Service health checks
+
+### Day 5 (26-Apr): local_repo
+- Repository creation
 - Package management
 - Service endpoints
 - Access validation
 
-### build_image (Balaji)
-- Image templates
-- Build process
+### Day 6 (29-Apr): build_image
+- Image template customization
+- Build process execution
 - Registry interaction
-- Customization options
+- Image verification
 
-### build_stream (Balaji)
-- Stream configuration
-- Build orchestration
-- Output handling
-- Integration points
-
-### provision (Balaji)
+### Day 7 (30-Apr): Discovery & Provisioning
+- OME discovery workflow
+- PXE mapping generation
 - Node provisioning
 - Service configuration
-- Role assignment
-- Post-provision validation
 
-### K8s (Prasanth)
-- Cluster deployment
-- Service configuration
-- Network setup
-- Pod management
+### Day 8 (1-May): K8s Cluster
+- Master node setup
+- Worker node configuration
+- Service deployment
+- Cluster validation
 
-### Telemetry (Prasanth)
-- Data collection
-- Service monitoring
-- Metric aggregation
-- Reporting
+### Day 9 (2-May): Slurm Cluster
+- Slurm installation
+- Compute node configuration
+- Job submission testing
+- Cluster health checks
+
+### Day 10 (3-May): Telemetry
+- Telemetry service setup
+- Data collection configuration
+- Metric verification
+- Reporting validation
+
+### Day 11 (6-May): Automation
+- Ansible playbook review
+- Automation framework understanding
+- Error handling review
+- Logging mechanisms
 
 ---
 
-*This plan focuses on understanding Omnia codebase and workflows for validation purposes, with clear ownership and hands-on code review.*
+## Schedule Notes
+
+- **Start Date:** 22-Apr-2026 (Tuesday)
+- **First 2 days (22-23 Apr):** Self-study for hardware basics and Omnia architecture
+- **From Friday (25-Apr):** Hands-on sessions begin with OS installation
+- **Weekend:** No sessions
+- **Total Duration:** 11 sessions over 3 weeks
+
+---
+
+*This plan focuses on practical Omnia deployment and validation with clear ownership and hands-on deployment experience.*
