@@ -30,11 +30,14 @@
 
 ---
 
-## Week 3: Automation & Code Walkthrough
+## Week 3: Automation & Reverse KT
 
 | Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
 |-----|------|-------|--------|----------|------------|------------------|
-| 12 | 7-May | Automation Code Walkthrough | Balaji | 1 hr | - Framework Structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
+| 12 | 7-May | Automation Code Walkthrough | Balaji | 1 hr | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
+| 13 | 8-May | Reverse KT - Deployment | - | 1 hr | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation |
+| 14 | 14-May | Reverse KT - Shahzama | Shahzama | 1 hr | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding |
+| 15 | 15-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding |
 
 ---
 
@@ -57,6 +60,16 @@
 - Kubernetes cluster deployment
 - Slurm cluster deployment
 - Compute node validation
+
+### Shahzama (Reverse KT - Day 14)
+- Deployment practice
+- Hands-on validation
+- Knowledge transfer verification
+
+### Sarvajith (Reverse KT - Day 15)
+- Deployment practice
+- Hands-on validation
+- Knowledge transfer verification
 
 ---
 
@@ -98,8 +111,8 @@
 
 ### Week 3 Goals
 - Understand automation framework
-- Review code structure
-- Prepare for independent validation
+- Complete reverse KT deployment
+- Validate Shahzama and Sarvajith understanding
 
 ---
 
@@ -173,6 +186,24 @@
 - Error handling review
 - Logging mechanisms
 
+### Day 13 (8-May): Reverse KT - Deployment
+- Complete deployment review
+- End-to-end workflow validation
+- Troubleshooting common issues
+- Best practices documentation
+
+### Day 14 (14-May): Reverse KT - Shahzama
+- Shahzama practices deployment
+- Hands-on validation exercises
+- Q&A for clarification
+- Knowledge assessment
+
+### Day 15 (15-May): Reverse KT - Sarvajith
+- Sarvajith practices deployment
+- Hands-on validation exercises
+- Q&A for clarification
+- Knowledge assessment
+
 ---
 
 ## Schedule Notes
@@ -181,8 +212,32 @@
 - **Days 1-2 (22-23 Apr):** Hardware basics, networking, Omnia documentation walkthrough
 - **From 24 Apr:** Omnia architecture begins with Balaji
 - **Weekend:** No sessions
-- **Total Duration:** 12 sessions over 3 weeks
+- **Reverse KT:** 14-May (Shahzama), 15-May (Sarvajith)
+- **Total Duration:** 15 sessions over 3 weeks
 
 ---
 
-*This plan focuses on practical Omnia deployment and validation with clear ownership and hands-on deployment experience.*
+## Reverse KT Objectives
+
+### For Shahzama (Day 14)
+- Understand complete Omnia deployment workflow
+- Practice hands-on deployment
+- Validate understanding through exercises
+- Document questions and gaps
+
+### For Sarvajith (Day 15)
+- Understand complete Omnia deployment workflow
+- Practice hands-on deployment
+- Validate understanding through exercises
+- Document questions and gaps
+
+### Assessment Criteria
+- Can independently navigate omnia.sh
+- Can execute prepare_oim and local_repo
+- Can build images and run discovery
+- Can provision K8s/Slurm clusters
+- Can troubleshoot common issues
+
+---
+
+*This plan focuses on practical Omnia deployment and validation with clear ownership and reverse KT for Shahzama and Sarvajith.*
