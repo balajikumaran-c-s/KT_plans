@@ -12,8 +12,8 @@
 | 1 | 22-Apr | Hardware Basics & Networking | - | 1 hr | - Server hardware components (CPU, memory, NICs, BMC)<br>- Network topology and structure<br>- BMC/iDRAC basics<br>- PXE boot concepts<br>**Hardware basics, networking, Omnia documentation walkthrough** | Understand server inventory and network structure |
 | 2 | 23-Apr | Omnia Architecture Overview | - | 1 hr | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram<br>**Hardware basics, networking, Omnia documentation walkthrough** | System context and component understanding |
 | 3 | 24-Apr | Omnia Architecture | Balaji | 1 hr | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram | System context and component understanding |
-| 4 | 25-Apr | OS Installation & omnia.sh | Prasanth | 1 hr | - OS installation on physical servers<br>- omnia.sh script execution<br>- Environment setup<br>- Initial configuration | OS deployment and script execution validation |
-| 5 | 26-Apr | prepare_oim | Prasanth | 1 hr | - OIM (Open Infrastructure Manager) deployment<br>- Credential management<br>- Service configuration<br>- Network setup | OIM deployment validation |
+| 4 | 27-Apr | OS Installation & omnia.sh | Prasanth | 1 hr | - OS installation on physical servers<br>- omnia.sh script execution<br>- Environment setup<br>- Initial configuration | OS deployment and script execution validation |
+| 5 | 28-Apr | prepare_oim | Prasanth | 1 hr | - OIM (Open Infrastructure Manager) deployment<br>- Credential management<br>- Service configuration<br>- Network setup | OIM deployment validation |
 
 ---
 
@@ -23,10 +23,10 @@
 |-----|------|-------|--------|----------|------------|------------------|
 | 6 | 29-Apr | local_repo | Rohit | 1 hr | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation |
 | 7 | 30-Apr | build_image | Balaji | 1 hr | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation |
-| 8 | 1-May | Discovery & Provisioning | Balaji | 1 hr | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation |
-| 9 | 2-May | K8s Cluster Deployment | Rohit | 1 hr | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation |
-| 10 | 3-May | Slurm Cluster Deployment | Rohit | 1 hr | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation |
-| 11 | 6-May | Telemetry Workflow | Prasanth | 1 hr | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation |
+| 8 | 4-May | Discovery & Provisioning | Balaji | 1 hr | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation |
+| 9 | 5-May | K8s Cluster Deployment | Rohit | 1 hr | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation |
+| 10 | 6-May | Slurm Cluster Deployment | Rohit | 1 hr | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation |
+| 11 | 7-May | Telemetry Workflow | Prasanth | 1 hr | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation |
 
 ---
 
@@ -34,10 +34,10 @@
 
 | Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
 |-----|------|-------|--------|----------|------------|------------------|
-| 12 | 7-May | Automation Code Walkthrough | Balaji | 1 hr | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
-| 13 | 8-May | Reverse KT - Deployment | - | 1 hr | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation |
-| 14 | 14-May | Reverse KT - Shahzama | Shahzama | 1 hr | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding |
-| 15 | 15-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding |
+| 12 | 8-May | Automation Code Walkthrough | Balaji | 1 hr | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
+| 13 | 11-May | Reverse KT - Deployment | - | 1 hr | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation |
+| 14 | 12-May | Reverse KT - Shahzama | Shahzama | 1 hr | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding |
+| 15 | 13-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding |
 
 ---
 
