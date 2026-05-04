@@ -23,12 +23,12 @@
 |-----|------|-------|--------|----------|--------|------------|------------------|----------|
 | 6 | 29-Apr | local_repo | Rohit | 1 hr | Delayed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Shahzama on leave - delayed to May 4 |
 | 7 | 30-Apr | build_image | Balaji | 1 hr | Delayed | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Delayed to May 5 |
-| 8 | 4-May | local_repo (Rescheduled) | Rohit | 1 hr | Completed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Rescheduled from Apr 29 due to Shahzama leave |
-| 9 | 5-May | build_image (Rescheduled) | Balaji | 1 hr | Completed | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Rescheduled from Apr 30 |
-| 10 | 6-May | Discovery & Provisioning | Balaji | 1 hr | Completed | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation | |
-| 11 | 7-May | K8s Cluster Deployment | Rohit | 1 hr | Completed | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation | |
-| 12 | 8-May | Slurm Cluster Deployment | Rohit | 1 hr | Completed | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation | |
-| 13 | 11-May | Telemetry Workflow | Prasanth | 1 hr | Completed | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation | |
+| 8 | 4-May | local_repo (Rescheduled) | Rohit | 1 hr | Pending | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Rescheduled from Apr 29 due to Shahzama leave |
+| 9 | 5-May | build_image (Rescheduled) | Balaji | 1 hr | Pending | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Rescheduled from Apr 30 |
+| 10 | 6-May | Discovery & Provisioning | Balaji | 1 hr | Pending | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation | |
+| 11 | 7-May | K8s Cluster Deployment | Rohit | 1 hr | Pending | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation | |
+| 12 | 8-May | Slurm Cluster Deployment | Rohit | 1 hr | Pending | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation | |
+| 13 | 11-May | Telemetry Workflow | Prasanth | 1 hr | Pending | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation | |
 
 ---
 
@@ -36,10 +36,10 @@
 
 | Day | Date | Topic | Owner | Duration | Status | Activities | Validation Focus | Comments |
 |-----|------|-------|--------|----------|--------|------------|------------------|----------|
-| 14 | 12-May | Automation Code Walkthrough | Balaji | 1 hr | Completed | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation | |
-| 15 | 13-May | Reverse KT - Deployment | - | 1 hr | Completed | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation | |
-| 16 | 14-May | Reverse KT - Shahzama | Shahzama | 1 hr | Completed | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding | |
-| 17 | 15-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | Completed | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding | |
+| 14 | 12-May | Automation Code Walkthrough | Balaji | 1 hr | Pending | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation | |
+| 15 | 13-May | Reverse KT - Deployment | - | 1 hr | Pending | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation | |
+| 16 | 14-May | Reverse KT - Shahzama | Shahzama | 1 hr | Pending | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding | |
+| 17 | 15-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | Pending | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding | |
 
 ---
 
@@ -106,15 +106,15 @@
 - [x] Deploy OIM
 
 ### Week 2 Goals
-- [x] Deploy local_repo and build images
-- [x] Execute discovery and provisioning
-- [x] Deploy K8s and Slurm clusters
-- [x] Configure telemetry workflow
+- [ ] Deploy local_repo and build images
+- [ ] Execute discovery and provisioning
+- [ ] Deploy K8s and Slurm clusters
+- [ ] Configure telemetry workflow
 
 ### Week 3 Goals
-- [x] Understand automation framework
-- [x] Complete reverse KT deployment
-- [x] Validate Shahzama and Sarvajith understanding
+- [ ] Understand automation framework
+- [ ] Complete reverse KT deployment
+- [ ] Validate Shahzama and Sarvajith understanding
 
 ---
 
@@ -270,4 +270,4 @@
 
 ---
 
-*This plan focuses on practical Omnia deployment and validation with clear ownership, status tracking, and reverse KT for Shahzama and Sarvajith. All sessions marked as completed.*
+*This plan focuses on practical Omnia deployment and validation with clear ownership, status tracking, and reverse KT for Shahzama and Sarvajith. Week 1 sessions (Days 1-5) are completed. Week 2 and Week 3 sessions are pending.*
