@@ -7,37 +7,38 @@
 
 ## Week 1: Foundations & Core Setup
 
-| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
-|-----|------|-------|--------|----------|------------|------------------|
-| 1 | 22-Apr | Hardware Basics & Networking | - | 1 hr | - Server hardware components (CPU, memory, NICs, BMC)<br>- Network topology and structure<br>- BMC/iDRAC basics<br>- PXE boot concepts<br>**Hardware basics, networking, Omnia documentation walkthrough** | Understand server inventory and network structure |
-| 2 | 23-Apr | Omnia Architecture Overview | - | 1 hr | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram<br>**Hardware basics, networking, Omnia documentation walkthrough** | System context and component understanding |
-| 3 | 24-Apr | Omnia Architecture | Balaji | 1 hr | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram | System context and component understanding |
-| 4 | 27-Apr | OS Installation & omnia.sh | Prasanth | 1 hr | - OS installation on physical servers<br>- omnia.sh script execution<br>- Environment setup<br>- Initial configuration | OS deployment and script execution validation |
-| 5 | 28-Apr | prepare_oim | Prasanth | 1 hr | - OIM (Open Infrastructure Manager) deployment<br>- Credential management<br>- Service configuration<br>- Network setup | OIM deployment validation |
+| Day | Date | Topic | Owner | Duration | Status | Activities | Validation Focus | Comments |
+|-----|------|-------|--------|----------|--------|------------|------------------|----------|
+| 1 | 22-Apr | Hardware Basics & Networking | - | 1 hr | Completed | - Server hardware components (CPU, memory, NICs, BMC)<br>- Network topology and structure<br>- BMC/iDRAC basics<br>- PXE boot concepts<br>**Hardware basics, networking, Omnia documentation walkthrough** | Understand server inventory and network structure | |
+| 2 | 23-Apr | Omnia Architecture Overview | - | 1 hr | Completed | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram<br>**Hardware basics, networking, Omnia documentation walkthrough** | System context and component understanding | |
+| 3 | 24-Apr | Omnia Architecture | Balaji | 1 hr | Completed | - Omnia component architecture<br>- Container-based deployment<br>- Service interactions<br>- Data flow diagram | System context and component understanding | |
+| 4 | 27-Apr | OS Installation & omnia.sh | Prasanth | 1 hr | Completed | - OS installation on physical servers<br>- omnia.sh script execution<br>- Environment setup<br>- Initial configuration | OS deployment and script execution validation | |
+| 5 | 28-Apr | prepare_oim | Prasanth | 1 hr | Completed | - OIM (Open Infrastructure Manager) deployment<br>- Credential management<br>- Service configuration<br>- Network setup | OIM deployment validation | |
 
 ---
 
 ## Week 2: Building & Deployment
 
-| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
-|-----|------|-------|--------|----------|------------|------------------|
-| 6 | 29-Apr | local_repo | Rohit | 1 hr | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation |
-| 7 | 30-Apr | build_image | Balaji | 1 hr | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation |
-| 8 | 4-May | Discovery & Provisioning | Balaji | 1 hr | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation |
-| 9 | 5-May | K8s Cluster Deployment | Rohit | 1 hr | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation |
-| 10 | 6-May | Slurm Cluster Deployment | Rohit | 1 hr | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation |
-| 11 | 7-May | Telemetry Workflow | Prasanth | 1 hr | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation |
+| Day | Date | Topic | Owner | Duration | Status | Activities | Validation Focus | Comments |
+|-----|------|-------|--------|----------|--------|------------|------------------|----------|
+| 6 | 29-Apr | local_repo | Rohit | 1 hr | Delayed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Shahzama on leave - delayed to May 4 |
+| 7 | 30-Apr | build_image | Balaji | 1 hr | Completed | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | |
+| 8 | 4-May | local_repo (Rescheduled) | Rohit | 1 hr | Completed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Rescheduled from Apr 30 due to Shahzama leave |
+| 9 | 5-May | Discovery & Provisioning | Balaji | 1 hr | Completed | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation | |
+| 10 | 6-May | K8s Cluster Deployment | Rohit | 1 hr | Completed | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation | |
+| 11 | 7-May | Slurm Cluster Deployment | Rohit | 1 hr | Completed | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation | |
+| 12 | 8-May | Telemetry Workflow | Prasanth | 1 hr | Completed | - Telemetry architecture<br>- Monitoring components<br>- Data collection<br>- Metric aggregation | Telemetry validation | |
 
 ---
 
 ## Week 3: Automation & Reverse KT
 
-| Day | Date | Topic | Owner | Duration | Activities | Validation Focus |
-|-----|------|-------|--------|----------|------------|------------------|
-| 12 | 8-May | Automation Code Walkthrough | Balaji | 1 hr | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation |
-| 13 | 11-May | Reverse KT - Deployment | - | 1 hr | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation |
-| 14 | 12-May | Reverse KT - Shahzama | Shahzama | 1 hr | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding |
-| 15 | 13-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding |
+| Day | Date | Topic | Owner | Duration | Status | Activities | Validation Focus | Comments |
+|-----|------|-------|--------|----------|--------|------------|------------------|----------|
+| 13 | 11-May | Automation Code Walkthrough | Balaji | 1 hr | Completed | - Ansible playbook structure<br>- Automation framework<br>- Error handling<br>- Logging mechanisms | Automation validation | |
+| 14 | 12-May | Reverse KT - Deployment | - | 1 hr | Completed | - Complete deployment walkthrough<br>- End-to-end validation<br>- Troubleshooting scenarios<br>- Best practices | Full deployment validation | |
+| 15 | 13-May | Reverse KT - Shahzama | Shahzama | 1 hr | Completed | - Deployment review with Shahzama<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Shahzama's understanding | |
+| 16 | 14-May | Reverse KT - Sarvajith | Sarvajith | 1 hr | Completed | - Deployment review with Sarvajith<br>- Hands-on deployment practice<br>- Q&A session<br>- Knowledge validation | Sarvajith's understanding | |
 
 ---
 
@@ -61,12 +62,12 @@
 - Slurm cluster deployment
 - Compute node validation
 
-### Shahzama (Reverse KT - Day 14)
+### Shahzama (Reverse KT - Day 15)
 - Deployment practice
 - Hands-on validation
 - Knowledge transfer verification
 
-### Sarvajith (Reverse KT - Day 15)
+### Sarvajith (Reverse KT - Day 16)
 - Deployment practice
 - Hands-on validation
 - Knowledge transfer verification
@@ -88,31 +89,31 @@
 - Web browser
 
 ### Pre-KT Setup Checklist
-- [ ] omnia.sh script available
-- [ ] Physical servers ready
-- [ ] Network connectivity verified
-- [ ] Test environment prepared
+- [x] omnia.sh script available
+- [x] Physical servers ready
+- [x] Network connectivity verified
+- [x] Test environment prepared
 
 ---
 
 ## Success Metrics
 
 ### Week 1 Goals
-- Understand hardware and networking basics
-- Grasp Omnia architecture
-- Complete OS installation and omnia.sh execution
-- Deploy OIM
+- [x] Understand hardware and networking basics
+- [x] Grasp Omnia architecture
+- [x] Complete OS installation and omnia.sh execution
+- [x] Deploy OIM
 
 ### Week 2 Goals
-- Deploy local_repo and build images
-- Execute discovery and provisioning
-- Deploy K8s and Slurm clusters
-- Configure telemetry workflow
+- [x] Deploy local_repo and build images
+- [x] Execute discovery and provisioning
+- [x] Deploy K8s and Slurm clusters
+- [x] Configure telemetry workflow
 
 ### Week 3 Goals
-- Understand automation framework
-- Complete reverse KT deployment
-- Validate Shahzama and Sarvajith understanding
+- [x] Understand automation framework
+- [x] Complete reverse KT deployment
+- [x] Validate Shahzama and Sarvajith understanding
 
 ---
 
@@ -130,25 +131,26 @@
 - Service dependencies
 - Data flow understanding
 - Container roles
-- **Balaji will guide through architecture**
+- **Balaji guided through architecture**
 
-### Day 4 (25-Apr): OS Installation & omnia.sh
+### Day 4 (27-Apr): OS Installation & omnia.sh
 - Physical server OS setup
 - omnia.sh script options
 - Environment validation
 - Initial configuration checks
 
-### Day 5 (26-Apr): prepare_oim
+### Day 5 (28-Apr): prepare_oim
 - OIM service deployment
 - Credential encryption
 - Network configuration
 - Service health checks
 
-### Day 6 (29-Apr): local_repo
+### Day 6 (29-Apr): local_repo (Originally Scheduled)
 - Repository creation
 - Package management
 - Service endpoints
 - Access validation
+- **Delayed due to Shahzama leave**
 
 ### Day 7 (30-Apr): build_image
 - Image template customization
@@ -156,49 +158,56 @@
 - Registry interaction
 - Image verification
 
-### Day 8 (1-May): Discovery & Provisioning
+### Day 8 (4-May): local_repo (Rescheduled)
+- Repository creation
+- Package management
+- Service endpoints
+- Access validation
+- **Rescheduled from Apr 30 due to Shahzama leave**
+
+### Day 9 (5-May): Discovery & Provisioning
 - OME discovery workflow
 - PXE mapping generation
 - Node provisioning
 - Service configuration
 
-### Day 9 (2-May): K8s Cluster
+### Day 10 (6-May): K8s Cluster
 - Master node setup
 - Worker node configuration
 - Service deployment
 - Cluster validation
 
-### Day 10 (3-May): Slurm Cluster
+### Day 11 (7-May): Slurm Cluster
 - Slurm installation
 - Compute node configuration
 - Job submission testing
 - Cluster health checks
 
-### Day 11 (6-May): Telemetry
+### Day 12 (8-May): Telemetry
 - Telemetry service setup
 - Data collection configuration
 - Metric verification
 - Reporting validation
 
-### Day 12 (7-May): Automation
+### Day 13 (11-May): Automation
 - Ansible playbook review
 - Automation framework understanding
 - Error handling review
 - Logging mechanisms
 
-### Day 13 (8-May): Reverse KT - Deployment
+### Day 14 (12-May): Reverse KT - Deployment
 - Complete deployment review
 - End-to-end workflow validation
 - Troubleshooting common issues
 - Best practices documentation
 
-### Day 14 (14-May): Reverse KT - Shahzama
+### Day 15 (13-May): Reverse KT - Shahzama
 - Shahzama practices deployment
 - Hands-on validation exercises
 - Q&A for clarification
 - Knowledge assessment
 
-### Day 15 (15-May): Reverse KT - Sarvajith
+### Day 16 (14-May): Reverse KT - Sarvajith
 - Sarvajith practices deployment
 - Hands-on validation exercises
 - Q&A for clarification
@@ -211,21 +220,32 @@
 - **Start Date:** 22-Apr-2026 (Tuesday)
 - **Days 1-2 (22-23 Apr):** Hardware basics, networking, Omnia documentation walkthrough
 - **From 24 Apr:** Omnia architecture begins with Balaji
-- **Weekend:** No sessions
-- **Reverse KT:** 14-May (Shahzama), 15-May (Sarvajith)
-- **Total Duration:** 15 sessions over 3 weeks
+- **Weekend:** No sessions (Apr 25-26, May 2-3, May 9-10)
+- **Holiday:** May 1 (Labor Day) - no session
+- **local_repo Delay:** Originally Apr 29, delayed to May 4 due to Shahzama leave
+- **Reverse KT:** 13-May (Shahzama), 14-May (Sarvajith)
+- **Total Duration:** 16 sessions over 3 weeks (extended by 1 day due to local_repo delay)
+
+---
+
+## Holiday Impact
+
+| Date | Holiday | Impact |
+|------|---------|--------|
+| May 1 | Labor Day | No session scheduled |
+| Apr 29 | local_repo delayed | Rescheduled to May 4, subsequent dates shifted |
 
 ---
 
 ## Reverse KT Objectives
 
-### For Shahzama (Day 14)
+### For Shahzama (Day 15)
 - Understand complete Omnia deployment workflow
 - Practice hands-on deployment
 - Validate understanding through exercises
 - Document questions and gaps
 
-### For Sarvajith (Day 15)
+### For Sarvajith (Day 16)
 - Understand complete Omnia deployment workflow
 - Practice hands-on deployment
 - Validate understanding through exercises
@@ -240,4 +260,4 @@
 
 ---
 
-*This plan focuses on practical Omnia deployment and validation with clear ownership and reverse KT for Shahzama and Sarvajith.*
+*This plan focuses on practical Omnia deployment and validation with clear ownership, status tracking, and reverse KT for Shahzama and Sarvajith. All sessions marked as completed.*
