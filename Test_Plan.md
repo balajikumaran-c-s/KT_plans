@@ -23,8 +23,8 @@
 |-----|------|-------|--------|----------|--------|------------|------------------|----------|
 | 6 | 29-Apr | local_repo | Rohit | 1 hr | Delayed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Shahzama on leave - delayed to May 4 |
 | 7 | 30-Apr | build_image | Balaji | 1 hr | Delayed | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Delayed to May 5 |
-| 8 | 4-May | local_repo (Rescheduled) | Rohit | 1 hr | Pending | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Rescheduled from Apr 29 due to Shahzama leave |
-| 9 | 5-May | build_image (Rescheduled) | Balaji | 1 hr | Pending | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Rescheduled from Apr 30 |
+| 8 | 4-May | local_repo (Rescheduled) | Rohit | 1 hr | Completed | - Local repository setup<br>- Package management<br>- Pulp container role<br>- Repository endpoints | Repository validation | Rescheduled from Apr 29 due to Shahzama leave |
+| 9 | 5-May | build_image (Rescheduled) | Balaji | 1 hr | Completed | - Image building workflow<br>- OS image customization<br>- Template handling<br>- Registry integration | Image build validation | Rescheduled from Apr 30 |
 | 10 | 7-May | Discovery & Provisioning | Balaji | 1 hr | Completed | - Discovery mechanisms (OME)<br>- PXE mapping file generation<br>- Provisioning workflow<br>- Node configuration | Discovery and provisioning validation | Rescheduled from May 6 due to Balaji's Omnia critical validation |
 | 11 | 8-May | K8s Cluster Deployment | Rohit | 1 hr | Pending | - Kubernetes architecture<br>- Master/worker node setup<br>- Service deployment<br>- Network configuration | K8s cluster validation | |
 | 12 | 11-May | Slurm Cluster Deployment | Rohit | 1 hr | Pending | - Slurm workload manager<br>- Compute/control nodes<br>- Job scheduling<br>- Service configuration | Slurm cluster validation | |
@@ -106,8 +106,8 @@
 - [x] Deploy OIM
 
 ### Week 2 Goals
-- [ ] Deploy local_repo and build images
-- [ ] Execute discovery and provisioning
+- [x] Deploy local_repo and build images
+- [x] Execute discovery and provisioning
 - [ ] Deploy K8s and Slurm clusters
 - [ ] Configure telemetry workflow
 
